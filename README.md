@@ -103,6 +103,79 @@ The <b>Hotel Management Application</b> is a Node.js-based system developed usin
 
 <h2>Data Models</h2>
 
+<h3>Person</h3>
+
+The Person data model represents information about staff members in the hotel.
+
+
+<ul>
+  <li><b>Fields:</b>
+    </br>
+    <ul>
+      <li>name: String(Person's name)</li>
+      <li>age: Number (Person's age) </li>
+      <li>work: Enum (Role in the hotel, such as chef, waiter, manager) </li>
+      <li>mobile: String (Person's mobile number)</li>
+      <li>email: String (Person's email address, unique) </li>
+      <li>address: String (Person's address)</li>
+      <li>salary: Number (Person's salary) </li>
+    </ul>
+  </li>
+</ul>
+
+
+ <li><b>Example:</b>
+</br>
+ {
+  "name": "raufur mukit",
+  "age": 26,
+  "work": "manaer",
+  "mobile": "123-456-7890",
+  "email": "mukit@example.com",
+  "address": "Dhaka",
+  "salary": 30000
+} 
+
+
+<h3>Menu Item</h3>
+
+The MenuItem data model represents information about menu items available in the hotel.
+
+
+<ul>
+  <li><b>Fields:</b>
+    </br>
+    <ul>
+      <li>name: String (Item's name)
+</li>
+      <li>price: Number (Item's price)</li>
+      <li>taste: Enum (Item's taste, such as sweet, spicy, sour) </li>
+      <li>is_drink: Boolean (Indicates if the item is a drink, default is false)</li>
+      <li>ingredients: Array of Strings (List of ingredients, default is an empty array) </li>
+      <li>address: String (Person's address)</li>
+      <li>sales: Number (Number of sales for the item, default is 0) </li>
+    </ul>
+  </li>
+</ul>
+
+
+ <li><b>Example:</b>
+</br>
+ {
+  "name": "Spicy Chicken Curry",
+  "price": 12.99,
+  "taste": "spicy",
+  "is_drink": false,
+  "ingredients": ["chicken", "spices", "vegetables"],
+  "num_sales": 50
+}
+
+	
+ 
+
+
+
+
 
 
 
